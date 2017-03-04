@@ -1217,6 +1217,7 @@ def GetInterfaceList(cmdMode):
 	if ord(line[0]) != 32:
             printd ("Line : " + str(line))
             IFACE = line[:line.find(' ')]
+            IFACE = IFACE[:IFACE.find(':')]
             IFACE2=IFACE[:2].upper()
             printd ("IFACE : " + str(IFACE))
             printd ("IFACE2 : " + str(IFACE2))
